@@ -1,0 +1,77 @@
+<html lang="fr"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Liste des Joueurs</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body class="bg-light" style="height: 100vh;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img class="col-md-8" src="img/Geneve-Chenois-Volleyball-logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav"> <!-- Unique ID for the collapse -->
+                <div class="navbar-nav">
+                    <a class="nav-link active fs-3" aria-current="page" href="index.html" style="color:#00466d;">Accueil</a>
+                    <a class="nav-link active fs-3" aria-current="page" href="stat.html" style="color:#00466d;">stat</a>
+                    <a class="nav-link active fs-3" aria-current="page" href="login.html" style="color:#00466d;">Logout</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card shadow-sm">
+                    <div class="card-header bg-primary text-white">
+                        <h4 class="mb-0">Liste des Joueurs pour l'Équipe: l2</h4>
+                    </div>
+                    <div class="card-body">
+                        <form method="POST" action="index.html">
+                            <table class="table table-striped table-bordered">
+                                <thead class="table-dark text-center">
+                                    <tr>
+                                        <th>Nom</th>
+                                        <th>Prénom</th>
+                                        <th>Présence</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                                <td>deljsp</td>
+                                                <td>fabricia</td>
+                                                <td class="text-center">
+                                                    <input type="checkbox" name="joueurs[]" value="6">
+                                                </td>
+                                              </tr><tr>
+                                                <td>maricio</td>
+                                                <td>parri</td>
+                                                <td class="text-center">
+                                                    <input type="checkbox" name="joueurs[]" value="7">
+                                                </td>
+                                              </tr>                                </tbody>
+                            </table>
+                            <div class="d-flex justify-content-end">
+                                <button type="submit" class="btn btn-success">Valider</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer mt-auto py-3 bg-light">
+        <div class="container text-center">
+            <span class="text-muted">© 2024 Votre Site</span>
+        </div>
+    </footer>
+
+    <script src="js/bootstrap.min.js"></script>
+
+
+
+</body></html>
